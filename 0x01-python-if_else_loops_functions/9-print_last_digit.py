@@ -1,11 +1,10 @@
-#!/usr/bin/python3
-def print_last_digit(number):
-    if number < 0:
-    print("{:d}".format(-(number % -10)), end='')
+#!/usr/bin/env python3
+import sys
 
-return(-(number % -10))
+sys.path.append('../')
+print_last_digit = __import__('9-print_last_digit').print_last_digit
 
-else:
-    print("{:d}".format(number % 10), end='')
-
-return(number % 10)
+print_last_digit(98)
+print_last_digit(0)
+r = print_last_digit(-1024)
+print(r)
