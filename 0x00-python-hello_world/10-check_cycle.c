@@ -9,10 +9,10 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *head
+	listint_t *head;
 	listint_t *tail;
 
-	if (list== NULL)
+	if (list == NULL)
 		return (0);
 
 	head = list;
