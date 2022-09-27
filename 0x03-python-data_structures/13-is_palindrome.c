@@ -1,55 +1,84 @@
 #include <stdlib>
 #include <stdio.h>
 #include "lists.h"
-/**
- * list_len - finds no. of elements ina linked list.
- * @h: pointer to linked list.
- *
- * Return: number of elements in linked list.
-*/
-size_t list_len(listint_t *h)
-{
-	size_t  nodes = 0;
-	
-	if (h == NULL)
-		return (0);
-	while (h != NULL)
-	{
-		nodes++;
-		h = h->next;
-	}
-	return (nodes);
-}
 
 /**
- * is_palindrome - checks if a singly linked list is a palindrome.
- * @head: double pointert to head of d-list.
+ * is_palindrome - Checks if a singly linked list is a palindrome
+ * @head: The head of the singly linked list
  *
- * Return: 1 if palindrome, 0 otherwise.
+ * Return: 0 if it is not a palindrome, 1 if it is a palindrome
 */
+
 int is_palindrome(listint_t **head)
 {
-	int *nArr, i = 0, j = 0, len = 0;
-	listint_t *temp;
+	listint_t *start = NULL, *end = NULL;
+	unsigned int i = 0, len = 0, len_cyc = 0, len_list = 0;
+	
+	if (head == NULL)
+		return (0);
 	
 	if (*head == NULL)
 		return (1);
-	temp = *head;
-	len = list_len(temp);
-	nArr = (int *)malloc(sizeof(int) * len);
-	if (nArr == NULL)
-		return (2);
-	temp = *head;
-	while (temp != NULL)
+	
+	start = *head;
+	len = listint_len(start);
+	len_cyc = len * 2;
+	len_list = len_cyc - 2;
+	end = *head;
+	
+	for (; i < len_cyc; i = i + 2)
 	{
-		nArr[j] = temp->n;
-		j++;
-		temp = temp->next;
-	}
-	for (i = 0, j = len - 1; i < j; i++, j--)
-	{
-		if (nArr[i] != nArr[j])
+		if (start[i].n != end[len_list].n)
 			return (0);
+		
+		len_list = len_list - 2;
 	}
 	return (1);
+}
+
+/**
+ * get_nodeint_at_index - Gets a node from a linked list
+ * @head: The head of the linked list
+ * @index: The index to find in the linked list
+ *
+ * Return: The specific node of the linked list
+*/
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	listint_t *current = head;
+	unsigned int iter_times = 0;
+	
+	if (head)
+	{
+		while (current != NULL)
+		{
+			if (iter_times == index)
+				return (current);
+			current = current->next;
+			++iter_times;
+		}
+	}
+
+	return (NULL);
+}
+
+/**
+ * slistint_len - Counts the number of elements in a linked list
+ * @h: The linked list to count
+ *
+ * Return: Number of elements in the linked list
+*/
+
+size_t listint_len(const listint_t *h)
+{
+	int lenght = 0;
+	
+	while (h != NULL)
+	{
+		++lenght;
+		h = h->next;
+	}
+
+	return (lenght);
 }
