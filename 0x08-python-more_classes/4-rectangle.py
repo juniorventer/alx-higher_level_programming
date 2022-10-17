@@ -23,6 +23,7 @@ class Rectangle:
             height (:obj:`int`, optional): The height of the Rectangle.
 
         """
+
         self.width = width
         self.height = height
 
