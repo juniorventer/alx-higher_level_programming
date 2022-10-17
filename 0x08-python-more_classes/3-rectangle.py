@@ -77,7 +77,7 @@ class Rectangle:
         Raises:
             TypeError: If `value` type is not `int`.
             ValueError: If `value` is less than `0`.
-        
+
         """
         self.__check_valid_height(value)
         self.__height = value
@@ -211,12 +211,12 @@ class Rectangle:
                 rect_str += '\n'
 
         return rect_str
-                    
+
     def __str__(self):
         """
 
         Returns a string with the representation of the Rectangle.
-        
+
         """
 
         return self.__draw_rectangle()
