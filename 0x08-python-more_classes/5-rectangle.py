@@ -26,7 +26,7 @@ class Rectangle:
 
         self.width = width
         self.height = height
-    
+
     def __del__(self):
         """
 
@@ -161,7 +161,7 @@ class Rectangle:
         Returns:
             int: `True` If value is greater than
             or equal to 0, `False` otherwise.
-        
+
         """
 
         if value >= 0:
@@ -221,7 +221,6 @@ class Rectangle:
                 rect_str += '\n'
 
             return rect_str
-    
     def __str__(self):
         """
 
