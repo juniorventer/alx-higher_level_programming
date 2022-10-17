@@ -23,13 +23,13 @@ class Rectangle:
         Args:
             width (:obj:`int`, optional): The width of the Rectangle.
             height (:obj:`int`, optional): The height of the Rectangle.
-        
+
         """
 
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-    
+
     def __del__(self):
         """
 
@@ -242,7 +242,6 @@ class Rectangle:
         Returns the representation of the Rectangle.
 
         """
-
         w = str(eval('self.width'))
         h = str(eval('self.height'))
 
