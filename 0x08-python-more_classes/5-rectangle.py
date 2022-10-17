@@ -222,6 +222,7 @@ class Rectangle:
                 rect_str += '\n'
 
             return rect_str
+
     def __str__(self):
         """
 
