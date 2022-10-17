@@ -96,9 +96,8 @@ class Rectangle:
         Raises:
             TypeError: If `width` type is not `int`.
             ValueError: If `width` is less than `0`.
-        
+
         """
-        
         if self.__check_int_value(width) is False:
             raise TypeError('width must be an integer')
 
@@ -111,7 +110,7 @@ class Rectangle:
 
         Args:
             height (int): The height of the Rectangle.
-        
+
         Raises:
             TypeError: If `height` type is not `int`.
             ValueError: If `height` is less than `0`.
