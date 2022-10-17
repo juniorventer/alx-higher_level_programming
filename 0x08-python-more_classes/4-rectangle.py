@@ -30,7 +30,7 @@ class Rectangle:
     @property
     def width(self):
         """
-        
+
         Returns the width of the Rectangle
 
         """
@@ -119,7 +119,7 @@ class Rectangle:
 
         if self.__check_int_value(height) is False:
             raise TypeError('height must be an integer')
-        
+
         if self.__check_positive_value(height) is False:
             raise ValueError('height must be >= 0')
     def __check_int_value(self, value):
@@ -188,7 +188,7 @@ class Rectangle:
 
     def __draw_rectangle(self):
         """
-        
+
         Draw the Rectangle with their size
 
         Returns:
@@ -207,7 +207,7 @@ class Rectangle:
         for i in range(h):
             for j in range(w):
                 rect_str += '#'
-            
+
             if i != h - 1:
                 rect_str += '\n'
 
