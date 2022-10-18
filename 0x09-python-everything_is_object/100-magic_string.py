@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-def magic_string(values=[]):
-    values.append('Holberton')
-    return ', '.join(values)
+
+
+def magic_string():
+    setattr(magic_string, "n", getattr(magic_string, "n", 0) + 1)
+    return ("Holberton, " * getattr(magic_string, "n", 0))[:-2]
