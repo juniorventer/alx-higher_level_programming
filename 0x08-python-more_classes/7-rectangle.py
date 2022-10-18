@@ -26,7 +26,7 @@ class Rectangle:
             height (:obj:`int`, optional): The height of the Rectangle.
 
         """
-        
+
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -104,6 +104,7 @@ class Rectangle:
 
         Args:
             width (int): The width of the Rectangle.
+
         Raises:
             TypeError: If `width` type is not `int`.
             ValueError: If `width` is less than `0`.
@@ -129,7 +130,7 @@ class Rectangle:
             ValueError: If `height` is less than `0`.
 
         """
-        
+
         if self.__check_int_value(height) is False:
             raise TypeError('height must be an integer')
 
