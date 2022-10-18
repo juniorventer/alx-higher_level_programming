@@ -122,7 +122,7 @@ class Rectangle:
 
         if self.__check_positive_value(height) is False:
             raise ValueError('height must be >= 0')
-    
+
     def __check_int_value(self, value):
         """
 
