@@ -35,7 +35,7 @@ class Rectangle:
 
         """
 
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -47,7 +47,7 @@ class Rectangle:
             value (int): The width of the Rectangle.
 
         Raises:
-            TypeError: If 'value' type is not 'int'.
+            TypeError: If `value` type is not `int`.
             ValueError: If `value` is less than `0`.
 
         """
@@ -89,7 +89,7 @@ class Rectangle:
         Checks if the width is a valid integer
 
         Args:
-            width (int): The width of the Rectangle
+            width (int): The width of the Rectangle.
 
         Raises:
             TypeError: If `width` type is not `int`.
@@ -166,7 +166,7 @@ class Rectangle:
         Computes the area of Rectangle.
 
         Returns:
-            int: The area of the Regtangle.
+            int: The area of the Rectangle.
 
         """
 
