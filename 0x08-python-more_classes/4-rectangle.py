@@ -212,7 +212,7 @@ class Rectangle:
             if i != h - 1:
                 rect_str += '\n'
 
-            return rect_str
+        return rect_str
 
     def __str__(self):
         """
