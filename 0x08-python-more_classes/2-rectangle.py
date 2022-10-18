@@ -16,7 +16,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """
 
-        Cc=hecks the parameters and initializes some values
+        Checks the parameters and initializes some values
 
         Args:
             width (:obj:`int`, optional): The width of the Rectangle.
@@ -26,7 +26,7 @@ class Rectangle:
 
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """
@@ -85,6 +85,7 @@ class Rectangle:
 
     def __check_valid_width(self, width):
         """
+
         Checks if the width is a valid integer
 
         Args:
