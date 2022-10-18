@@ -171,7 +171,7 @@ class Rectangle:
 
         if value >= 0:
             return True
-        
+
         return False
 
     def area(self):
@@ -225,7 +225,7 @@ class Rectangle:
 
             if i != h - 1:
                 rect_str += '\n'
-        
+
         return rect_str
 
     @staticmethod
