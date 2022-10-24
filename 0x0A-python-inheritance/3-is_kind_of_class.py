@@ -18,5 +18,5 @@ def is_kind_of_class(obj, a_class):
     """
 
     if issubclass(type(obj, a_class) or isinstance(obj, a_class):
-            return True
+        return True
     return False
