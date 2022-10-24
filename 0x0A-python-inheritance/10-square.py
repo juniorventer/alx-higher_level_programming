@@ -2,7 +2,6 @@
 """inherits from BaseGeometry"""
 
 
-
 class BaseGeometry:
     """public instance method"""
 
