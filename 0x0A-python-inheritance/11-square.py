@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """inherits from BaseGeometry"""
+Rectangle =__import__('9-rectangle').Rectangle
 
 
 class BaseGeometry:
