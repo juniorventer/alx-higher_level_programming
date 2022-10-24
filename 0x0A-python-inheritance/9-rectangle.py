@@ -15,17 +15,17 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """Initializes an instance of class Rectangle"""
-        
+
         self.integer_validator("width", width)
         self.integer_validator("height", height)
 
         self.__width = width
-        
+
         self.__height = heigh
 
     def area(self):
         """Returns are of the Rectangle"""
-        
+
         area = self.__width * self.__height
         return area
 
@@ -34,4 +34,4 @@ class Rectangle(BaseGeometry):
         Returns string representation of an instance of class Rectangle
         """
         return "[{}] {}/{}".format(type(self).__name__,
-                                    self.__width,self.__height)
+                                    self.__width, self.__height)
