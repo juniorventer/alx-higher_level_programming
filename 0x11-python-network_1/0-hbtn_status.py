@@ -3,10 +3,9 @@
 
 import urllib.request as request
 
-
 if __name__ == "__main__":
     with request.urlopen('https://intranet.hbtn.io/status') as r:
-        html + r.read()
+        html = r.read()
         print("Body response:")
         print("\t- type: {}".format(type(html)))
         print("\t- content: {}".format(html))
