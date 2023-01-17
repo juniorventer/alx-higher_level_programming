@@ -5,12 +5,9 @@ as a parameter, and finally displays the body
 of the response.
 """
 
-from sys import argv
 import requests
-
+from sys import argv
 
 if __name__ == "__main__":
-    payload = {'email': argv[2]}
-    req = requests.post(argv[1], data=payload)
-
-    print(req.text)v
+    response = requests.post(argv[1], data= {'email': argv[2]})
+    print(response.text)
