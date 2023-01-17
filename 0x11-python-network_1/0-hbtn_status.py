@@ -5,8 +5,6 @@ import urllib.request as request
 
 
 if __name__ == "__main__":
-    req = Request('https://intranet.hbtn.io/status')
-
     with request.urlopen('https://intranet.hbtn.io/status') as r:
         html + r.read()
         print("Body response:")
