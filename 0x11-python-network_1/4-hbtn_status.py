@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Fetches the URL: https://intranet.hbtn.io/status
+"""Fetches the URL: https://alx-intranet.hbtn.io/status
 with `requests` module
 """
 
